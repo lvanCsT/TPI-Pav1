@@ -1,6 +1,6 @@
 ﻿namespace TPI.ABMs
 {
-    partial class Prestaciones
+    partial class AltaPrestacion
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.maskedTextBoxReintegro = new System.Windows.Forms.MaskedTextBox();
+            this.txtEdadMinima = new System.Windows.Forms.MaskedTextBox();
             this.lblCodPrestacion = new System.Windows.Forms.Label();
-            this.textBoxNroExpe = new System.Windows.Forms.TextBox();
+            this.txtCodPrestacion = new System.Windows.Forms.TextBox();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnBajaPrestacion = new System.Windows.Forms.Button();
             this.btnAltaPrestacion = new System.Windows.Forms.Button();
@@ -38,21 +38,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewExpe = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.codPrestacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edadMinima = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbDescripcion = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpe)).BeginInit();
             this.SuspendLayout();
             // 
-            // maskedTextBoxReintegro
+            // txtEdadMinima
             // 
-            this.maskedTextBoxReintegro.Location = new System.Drawing.Point(147, 87);
-            this.maskedTextBoxReintegro.Mask = "99";
-            this.maskedTextBoxReintegro.Name = "maskedTextBoxReintegro";
-            this.maskedTextBoxReintegro.Size = new System.Drawing.Size(22, 20);
-            this.maskedTextBoxReintegro.TabIndex = 41;
-            this.maskedTextBoxReintegro.ValidatingType = typeof(int);
+            this.txtEdadMinima.Location = new System.Drawing.Point(147, 87);
+            this.txtEdadMinima.Mask = "99";
+            this.txtEdadMinima.Name = "txtEdadMinima";
+            this.txtEdadMinima.Size = new System.Drawing.Size(22, 20);
+            this.txtEdadMinima.TabIndex = 40;
+            this.txtEdadMinima.ValidatingType = typeof(int);
             // 
             // lblCodPrestacion
             // 
@@ -63,14 +63,13 @@
             this.lblCodPrestacion.TabIndex = 39;
             this.lblCodPrestacion.Text = "Código de prestación:";
             // 
-            // textBoxNroExpe
+            // txtCodPrestacion
             // 
-            this.textBoxNroExpe.Location = new System.Drawing.Point(146, 23);
-            this.textBoxNroExpe.Name = "textBoxNroExpe";
-            this.textBoxNroExpe.ReadOnly = true;
-            this.textBoxNroExpe.Size = new System.Drawing.Size(121, 20);
-            this.textBoxNroExpe.TabIndex = 38;
-            this.textBoxNroExpe.Text = "0";
+            this.txtCodPrestacion.Location = new System.Drawing.Point(146, 23);
+            this.txtCodPrestacion.Name = "txtCodPrestacion";
+            this.txtCodPrestacion.Size = new System.Drawing.Size(121, 20);
+            this.txtCodPrestacion.TabIndex = 38;
+            this.txtCodPrestacion.Text = "0";
             // 
             // btnActualizar
             // 
@@ -98,6 +97,7 @@
             this.btnAltaPrestacion.TabIndex = 34;
             this.btnAltaPrestacion.Text = "Alta de prestacion";
             this.btnAltaPrestacion.UseVisualStyleBackColor = true;
+            this.btnAltaPrestacion.Click += new System.EventHandler(this.btnAltaPrestacion_Click);
             // 
             // btnLimpiar
             // 
@@ -107,6 +107,7 @@
             this.btnLimpiar.TabIndex = 36;
             this.btnLimpiar.Text = "Limpiar Celdas";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // label2
             // 
@@ -141,14 +142,6 @@
             this.dataGridViewExpe.Size = new System.Drawing.Size(464, 198);
             this.dataGridViewExpe.TabIndex = 31;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(146, 49);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 42;
-            // 
             // codPrestacion
             // 
             this.codPrestacion.HeaderText = "Cód. de prestación";
@@ -168,15 +161,24 @@
             this.edadMinima.Name = "edadMinima";
             this.edadMinima.ReadOnly = true;
             // 
-            // Prestaciones
+            // cmbDescripcion
+            // 
+            this.cmbDescripcion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDescripcion.FormattingEnabled = true;
+            this.cmbDescripcion.Location = new System.Drawing.Point(146, 49);
+            this.cmbDescripcion.Name = "cmbDescripcion";
+            this.cmbDescripcion.Size = new System.Drawing.Size(121, 21);
+            this.cmbDescripcion.TabIndex = 39;
+            // 
+            // AltaPrestacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 325);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.maskedTextBoxReintegro);
+            this.Controls.Add(this.cmbDescripcion);
+            this.Controls.Add(this.txtEdadMinima);
             this.Controls.Add(this.lblCodPrestacion);
-            this.Controls.Add(this.textBoxNroExpe);
+            this.Controls.Add(this.txtCodPrestacion);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnBajaPrestacion);
             this.Controls.Add(this.btnAltaPrestacion);
@@ -184,8 +186,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewExpe);
-            this.Name = "Prestaciones";
+            this.Name = "AltaPrestacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prestaciones";
+            this.Load += new System.EventHandler(this.Prestaciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -194,9 +198,9 @@
 
         #endregion
 
-        private System.Windows.Forms.MaskedTextBox maskedTextBoxReintegro;
+        private System.Windows.Forms.MaskedTextBox txtEdadMinima;
         private System.Windows.Forms.Label lblCodPrestacion;
-        private System.Windows.Forms.TextBox textBoxNroExpe;
+        private System.Windows.Forms.TextBox txtCodPrestacion;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnBajaPrestacion;
         private System.Windows.Forms.Button btnAltaPrestacion;
@@ -204,7 +208,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewExpe;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbDescripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn codPrestacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn edadMinima;

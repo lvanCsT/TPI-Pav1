@@ -44,6 +44,10 @@ namespace TPI
             this.Close();
         }
 
-
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AltaPrestacion ventana = new AltaPrestacion();
+            ventana.ShowDialog();
+        }
     }
 }

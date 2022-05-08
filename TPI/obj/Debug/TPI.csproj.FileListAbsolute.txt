@@ -20,10 +20,10 @@ C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.AltaAfiliado.resources
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaBarrio.resources
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaExpediente.resources
-C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.Prestaciones.resources
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.Escritorio.resources
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.Properties.Resources.resources
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.csproj.GenerateResource.cache
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.csproj.CoreCompileInputs.cache
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.exe
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.pdb
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaPrestacion.resources

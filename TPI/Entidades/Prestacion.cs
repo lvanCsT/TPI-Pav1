@@ -8,5 +8,8 @@ namespace TPI.Entidades
 {
     internal class Prestacion
     {
+        public int CodPrestacion { get; set; }
+        public string Descripcion { get; set; } = "";
+        public int EdadMinima { get; set; } = 0;
     }
 }

@@ -8,5 +8,7 @@ namespace TPI.Entidades
 {
     internal class Elemento
     {
+        public int NroElemento { get; set; }
+        public string Nombre { get; set; } = "";
     }
 }
