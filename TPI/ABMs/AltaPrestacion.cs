@@ -174,5 +174,71 @@ namespace TPI.ABMs
 
             return resultado;
         }
+
+        //obtiene un objeto afiliado con todos sus datos para un nro de afiliado especifico
+        private Prestacion ObtenerPrestacion(string Codpre)
+        {
+            string cadenaConex = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConex);
+            Prestacion pres = new Prestacion();
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "SELECT * FROM Prestaciones WHERE CodPrestacion = @codpre";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@codpre", Codpre);
+
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+                SqlDataReader dataReader = cmd.ExecuteReader();
+
+                if (dataReader != null && dataReader.Read())
+                {
+                    pres.CodPrestacion = int.Parse(Codpre);
+                    pres.EdadMinima = int.Parse(dataReader["EdadMinima"].ToString());
+                    pres.Descripcion = dataReader["Descripcopn"].ToString();
+                    
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR--->" + ex);
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+            return pres;
+        }
+
+        //carga los textbox con los datos de la BD para luego modificar
+        private void CargarCampos(Prestacion pres)
+        {
+            txtCodPrestacion.Text = pres.CodPrestacion.ToString();
+            txtCodPrestacion.Visible = true;
+            lblCodPrestacion.Visible = true;
+            cmbDescripcion.SelectedValue = pres.Descripcion;
+            txtEdadMinima.Text = pres.EdadMinima.ToString();
+        }
+
+        //Muestra los datos de un afiliado al clickear en la grilla una de las filas
+
+        private void dataGridViewPres_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indice = e.RowIndex;
+            btnActualizar.Enabled = true;
+            DataGridViewRow filaSeleccionada = dataGridViewPres.Rows[indice];
+            string codPrestacion = filaSeleccionada.Cells["CodPrestacion"].Value.ToString();
+            Prestacion pres = ObtenerPrestacion(codPrestacion);
+            LimpiarCampos();
+            //el comando de abajo
+            CargarCampos(pres);
+        }
     }
 }
