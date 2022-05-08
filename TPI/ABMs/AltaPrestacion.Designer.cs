@@ -37,12 +37,12 @@
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridViewExpe = new System.Windows.Forms.DataGridView();
+            this.dataGridViewPres = new System.Windows.Forms.DataGridView();
             this.codPrestacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edadMinima = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmbDescripcion = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPres)).BeginInit();
             this.SuspendLayout();
             // 
             // txtEdadMinima
@@ -67,6 +67,7 @@
             // 
             this.txtCodPrestacion.Location = new System.Drawing.Point(146, 23);
             this.txtCodPrestacion.Name = "txtCodPrestacion";
+            this.txtCodPrestacion.ReadOnly = true;
             this.txtCodPrestacion.Size = new System.Drawing.Size(121, 20);
             this.txtCodPrestacion.TabIndex = 38;
             this.txtCodPrestacion.Text = "0";
@@ -127,20 +128,20 @@
             this.label1.TabIndex = 32;
             this.label1.Text = "Descripción:";
             // 
-            // dataGridViewExpe
+            // dataGridViewPres
             // 
-            this.dataGridViewExpe.AllowUserToAddRows = false;
-            this.dataGridViewExpe.AllowUserToDeleteRows = false;
-            this.dataGridViewExpe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewExpe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewPres.AllowUserToAddRows = false;
+            this.dataGridViewPres.AllowUserToDeleteRows = false;
+            this.dataGridViewPres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPres.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codPrestacion,
             this.descripcion,
             this.edadMinima});
-            this.dataGridViewExpe.Location = new System.Drawing.Point(324, 23);
-            this.dataGridViewExpe.Name = "dataGridViewExpe";
-            this.dataGridViewExpe.ReadOnly = true;
-            this.dataGridViewExpe.Size = new System.Drawing.Size(464, 198);
-            this.dataGridViewExpe.TabIndex = 31;
+            this.dataGridViewPres.Location = new System.Drawing.Point(324, 23);
+            this.dataGridViewPres.Name = "dataGridViewPres";
+            this.dataGridViewPres.ReadOnly = true;
+            this.dataGridViewPres.Size = new System.Drawing.Size(464, 198);
+            this.dataGridViewPres.TabIndex = 31;
             // 
             // codPrestacion
             // 
@@ -185,12 +186,12 @@
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridViewExpe);
+            this.Controls.Add(this.dataGridViewPres);
             this.Name = "AltaPrestacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prestaciones";
             this.Load += new System.EventHandler(this.Prestaciones_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPres)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,7 +208,7 @@
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridViewExpe;
+        private System.Windows.Forms.DataGridView dataGridViewPres;
         private System.Windows.Forms.ComboBox cmbDescripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn codPrestacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;

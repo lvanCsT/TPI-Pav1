@@ -42,19 +42,137 @@ namespace TPI.ABMs
             cmbDescripcion.Items.Add("Odontopediatria");
         }
 
-        private void btnAltaPrestacion_Click(object sender, EventArgs e)
+        //obtiene los datos del Prestacion ingresados en los textbox y los guarda en un objeto Prestacion
+        private Prestacion ObtenerDatosPrestacion()
         {
-            string codigo = txtCodPrestacion.Text;
-            string descripcion = cmbDescripcion.GetItemText(cmbDescripcion.SelectedItem);
-            string edadMinima = txtEdadMinima.Text;
-                        
             Prestacion pres = new Prestacion();
 
-            pres.CodPrestacion = int.Parse(codigo);
-            pres.Descripcion = descripcion;
-            pres.EdadMinima = int.Parse(edadMinima);
-            
-            MessageBox.Show("Datos de la prestacion: " + pres.CodPrestacion + " " + pres.Descripcion + " " + pres.EdadMinima);
+            pres.CodPrestacion = int.Parse(txtCodPrestacion.Text);
+            pres.EdadMinima = int.Parse(txtEdadMinima.Text);
+            pres.Descripcion = cmbDescripcion.GetItemText(cmbDescripcion.SelectedItem);
+            return pres;
+
+        }
+
+        //es la carga del Prestacion a la base de datos
+        private bool CargarPrestacion(Prestacion pres)
+        {
+            string cadenaConex = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConex);
+            bool Resultado = false;
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "insert into Prestaciones VALUES (@desc,@edad)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@desc", pres.Descripcion);
+                cmd.Parameters.AddWithValue("@edad", pres.EdadMinima);
+                
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+                cmd.ExecuteNonQuery();
+
+                Resultado = true;
+
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR--->" + ex);
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+            return Resultado;
+        }
+
+        //carga la grilla con la BD
+        private void CargarGrilla()
+        {
+            string cadenaConex = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConex);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "SELECT * FROM Prestaciones";
+
+                cmd.Parameters.Clear();
+
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(tabla);
+
+                dataGridViewPres.DataSource = tabla;
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        private void btnAltaPrestacion_Click(object sender, EventArgs e)
+        {
+            if (validadIngresoDatos())
+            {
+                MessageBox.Show("Ingrese Todos los datos");
+
+            }
+            else
+            {
+                Prestacion pres = ObtenerDatosPrestacion();
+
+
+                if (CargarPrestacion(pres))
+                {
+                    MessageBox.Show("Cargado Con Exito");
+                    LimpiarCampos();
+                    CargarGrilla();
+                }
+                else
+                {
+                    MessageBox.Show("Error al cargar el Prestacion");
+                }
+            }
+            //    string codigo = txtCodPrestacion.Text;
+            //    string descripcion = cmbDescripcion.GetItemText(cmbDescripcion.SelectedItem);
+            //    string edadMinima = txtEdadMinima.Text;
+
+            //    Prestacion pres = new Prestacion();
+
+            //    pres.CodPrestacion = int.Parse(codigo);
+            //    pres.Descripcion = descripcion;
+            //    pres.EdadMinima = int.Parse(edadMinima);
+
+            //    MessageBox.Show("Datos de la prestacion: " + pres.CodPrestacion + " " + pres.Descripcion + " " + pres.EdadMinima);
+
+
+        }
+
+        private bool validadIngresoDatos()
+        {
+            bool resultado = cmbDescripcion.SelectedText.Equals(null) ||
+            txtCodPrestacion.Text.Equals("") ||
+            txtEdadMinima.Text.Equals("");
+
+            return resultado;
+        }
     }
 }
