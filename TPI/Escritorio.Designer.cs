@@ -36,10 +36,12 @@
             this.aBMsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaAfiliadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaExpedientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaBarrioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.graficosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.altaBarrioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.elementosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,7 +94,9 @@
             this.aBMsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.altaAfiliadosToolStripMenuItem,
             this.altaExpedientesToolStripMenuItem,
-            this.altaBarrioToolStripMenuItem});
+            this.altaBarrioToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.elementosToolStripMenuItem});
             this.aBMsToolStripMenuItem.Name = "aBMsToolStripMenuItem";
             this.aBMsToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.aBMsToolStripMenuItem.Text = "ABMs";
@@ -110,6 +114,19 @@
             this.altaExpedientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.altaExpedientesToolStripMenuItem.Text = "Alta Expedientes";
             this.altaExpedientesToolStripMenuItem.Click += new System.EventHandler(this.altaExpedientesToolStripMenuItem_Click);
+            // 
+            // altaBarrioToolStripMenuItem
+            // 
+            this.altaBarrioToolStripMenuItem.Name = "altaBarrioToolStripMenuItem";
+            this.altaBarrioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.altaBarrioToolStripMenuItem.Text = "Alta Barrio";
+            this.altaBarrioToolStripMenuItem.Click += new System.EventHandler(this.altaBarrioToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Text = "Prestaciones";
             // 
             // procesosToolStripMenuItem
             // 
@@ -129,12 +146,11 @@
             this.graficosToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.graficosToolStripMenuItem.Text = "Graficos";
             // 
-            // altaBarrioToolStripMenuItem
+            // elementosToolStripMenuItem
             // 
-            this.altaBarrioToolStripMenuItem.Name = "altaBarrioToolStripMenuItem";
-            this.altaBarrioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.altaBarrioToolStripMenuItem.Text = "Alta Barrio";
-            this.altaBarrioToolStripMenuItem.Click += new System.EventHandler(this.altaBarrioToolStripMenuItem_Click);
+            this.elementosToolStripMenuItem.Name = "elementosToolStripMenuItem";
+            this.elementosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.elementosToolStripMenuItem.Text = "Elementos";
             // 
             // Escritorio
             // 
@@ -169,5 +185,7 @@
         private System.Windows.Forms.ToolStripMenuItem informesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem graficosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem altaBarrioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem elementosToolStripMenuItem;
     }
 }

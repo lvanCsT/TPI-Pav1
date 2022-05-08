@@ -65,9 +65,17 @@
     <Compile Include="ABMs\AltaExpediente.Designer.cs">
       <DependentUpon>AltaExpediente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABMs\Prestaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Prestaciones.Designer.cs">
+      <DependentUpon>Prestaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\Afiliado.cs" />
     <Compile Include="Entidades\Barrio.cs" />
+    <Compile Include="Entidades\Elemento.cs" />
     <Compile Include="Entidades\Expediente.cs" />
+    <Compile Include="Entidades\Prestacion.cs" />
     <Compile Include="Escritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABMs\AltaExpediente.resx">
       <DependentUpon>AltaExpediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Prestaciones.resx">
+      <DependentUpon>Prestaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Escritorio.resx">
       <DependentUpon>Escritorio.cs</DependentUpon>
