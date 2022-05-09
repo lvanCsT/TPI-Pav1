@@ -151,7 +151,7 @@ namespace TPI
         //Metodo para limpiar campos
         private void LimpiarCampos()
         {
-            mtbCodEstado.Text = "";
+            mtbCodEstado.Text = "0";
             tbNombre.Text = "";
             rtbDescripcion.Text = "";
             

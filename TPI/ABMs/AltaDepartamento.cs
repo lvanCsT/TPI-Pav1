@@ -152,7 +152,7 @@ namespace TPI.ABMs
         //Metodo para limpiar campos
         private void LimpiarCampos()
         {
-            mtbIdDepartamento.Text = "";
+            mtbIdDepartamento.Text = "0";
             tbNombre.Text = "";
             
         }

@@ -148,7 +148,7 @@ namespace TPI.ABMs
         //Metodo para limpiar campos
         private void LimpiarCampos()
         {
-            maskedCodDoc.Text = "";
+            maskedCodDoc.Text = "0";
             tbNombre.Text = "";
             rtbDescripcion.Text = "";
         }

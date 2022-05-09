@@ -183,6 +183,9 @@ namespace TPI.ABMs
         private void buttonLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
+            
+            textBoxNroBarrio.Visible = false;
+            labelNroBarrio.Visible = false;
         }
 
         //Limpia los campos
@@ -342,6 +345,7 @@ namespace TPI.ABMs
                     textBoxNroBarrio.Text = "0";
                     textBoxNroBarrio.Visible = false;
                     labelNroBarrio.Visible = false;
+                    buttonActualizar.Enabled = false;
 
                     MessageBox.Show("Eliminado con exito");
                     cargarGrilla();
