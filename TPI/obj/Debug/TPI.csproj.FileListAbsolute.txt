@@ -27,3 +27,20 @@ C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.exe
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.pdb
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaPrestacion.resources
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\bin\Debug\TPI.exe.config
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\bin\Debug\TPI.exe
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\bin\Debug\TPI.pdb
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.csproj.AssemblyReference.cache
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.csproj.SuggestedBindingRedirects.cache
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.AltaAfiliado.resources
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaBarrio.resources
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaExpediente.resources
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaPrestacion.resources
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.Escritorio.resources
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.Properties.Resources.resources
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.csproj.GenerateResource.cache
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.csproj.CoreCompileInputs.cache
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.exe
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.pdb
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.AltaEstado.resources
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaDepartamento.resources
