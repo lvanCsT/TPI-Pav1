@@ -23,6 +23,9 @@ namespace TPI.ABMs
         private void AltaDepartamento_Load(object sender, EventArgs e)
         {
             btnActualizar.Enabled = false;
+            mtbIdDepartamento.Enabled = false;
+            mtbIdDepartamento.Visible = false;
+            lblIdDepartamento.Visible = false;
             CargarGrilla();
         }
 
@@ -94,7 +97,7 @@ namespace TPI.ABMs
                 }
                 else
                 {
-                    MessageBox.Show("Error al cargar el Expediente", "Advertencia");
+                    MessageBox.Show("Error al cargar el Departamento", "Advertencia");
                 }
             }
 
@@ -109,9 +112,8 @@ namespace TPI.ABMs
             {
                 SqlCommand cmd = new SqlCommand();
                 
-                string consulta = "insert into Departamento VALUES (@IdDepartamento, @Nombre)";
+                string consulta = "insert into Departamento VALUES (@Nombre)";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@IdDepartamento", dep.IdDepartamento);
                 cmd.Parameters.AddWithValue("@Nombre", dep.Nombre);
                
 
@@ -141,8 +143,7 @@ namespace TPI.ABMs
         //Metodo para validar campos completos
         private bool validadIngresoDatos()
         {
-            bool resultado = mtbIdDepartamento.Text.Equals("") ||
-            tbNombre.Text.Equals("");
+            bool resultado = tbNombre.Text.Equals("");
 
             return resultado;
         }
@@ -160,12 +161,16 @@ namespace TPI.ABMs
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
+            mtbIdDepartamento.Visible = false;
+            lblIdDepartamento.Visible = false;
         }
 
         private void dgbDepartamentos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int indice = e.RowIndex;
             btnActualizar.Enabled = true;
+            mtbIdDepartamento.Visible = true;
+            lblIdDepartamento.Visible = true;
             DataGridViewRow filaSeleccionada = dgbDepartamentos.Rows[indice];
             string IdDepartamento = filaSeleccionada.Cells["IdDEpartamento"].Value.ToString();
             Departamento dep = ObtenerDepartamento(IdDepartamento);
@@ -237,8 +242,10 @@ namespace TPI.ABMs
                 if (ActualizarDepartamento(dep))
                 {
                     btnActualizar.Enabled = false;
+                    mtbIdDepartamento.Visible = false;
+                    lblIdDepartamento.Visible = false;
 
-                    MessageBox.Show("Expediente Actualizado con exito");
+                    MessageBox.Show("Departamento Actualizado con exito");
                     LimpiarCampos();
                     CargarGrilla();
                 }

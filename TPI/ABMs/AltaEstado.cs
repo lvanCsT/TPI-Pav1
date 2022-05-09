@@ -22,6 +22,9 @@ namespace TPI
         private void AltaEstado_Load(object sender, EventArgs e)
         {
             btnActualizar.Enabled = false;
+            mtbCodEstado.Enabled = false;
+            mtbCodEstado.Visible = false;
+            lblCodEstado.Visible = false;
             CargarGrilla();
         }
 
@@ -64,9 +67,8 @@ namespace TPI
         private Estado ObtenerDatosEstado()
         {
             Estado est = new Estado();
-
-            est.Nombre = tbNombre.Text.Trim();
             est.CodigoEstado = int.Parse(mtbCodEstado.Text);
+            est.Nombre = tbNombre.Text.Trim();
             est.Descripcion = rtbDescripcion.Text;
 
             return est;
@@ -103,7 +105,7 @@ namespace TPI
                 }
                 else
                 {
-                    MessageBox.Show("Error al cargar el Expediente", "Advertencia");
+                    MessageBox.Show("Error al cargar el Estado", "Advertencia");
                 }
             }
         }
@@ -118,9 +120,8 @@ namespace TPI
             {
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "insert into Estados VALUES (@CodEstado, @Nombre, @Descripcion)";
+                string consulta = "insert into Estados VALUES (@Nombre, @Descripcion)";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@CodEstado", est.CodigoEstado );
                 cmd.Parameters.AddWithValue("@Nombre", est.Nombre);
                 cmd.Parameters.AddWithValue("@Descripcion", est.Descripcion);
 
@@ -153,13 +154,13 @@ namespace TPI
             mtbCodEstado.Text = "";
             tbNombre.Text = "";
             rtbDescripcion.Text = "";
+            
         }
 
         //Metodo para validar campos completos
         private bool validarIngresoDatos()
         {
-            bool resultado = mtbCodEstado.Text.Equals("") ||
-            tbNombre.Text.Equals("") || rtbDescripcion.Text.Equals("");
+            bool resultado = tbNombre.Text.Equals("") || rtbDescripcion.Text.Equals("");
 
             return resultado;
         }
@@ -168,6 +169,8 @@ namespace TPI
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
+            mtbCodEstado.Visible = false;
+            lblCodEstado.Visible = false;
         }
 
         //carga los textbox con los datos de la BD para luego modificar
@@ -225,6 +228,8 @@ namespace TPI
         {
             int indice = e.RowIndex;
             btnActualizar.Enabled = true;
+            mtbCodEstado.Visible = true;
+            lblCodEstado.Visible = true;
             DataGridViewRow filaSeleccionada = dgbEstados.Rows[indice];
             string CodigoEstado = filaSeleccionada.Cells["CodigoEstado"].Value.ToString();
             Estado est = ObtenerEstado(CodigoEstado);
@@ -246,8 +251,10 @@ namespace TPI
                 if (ActualizarEstado(est))
                 {
                     btnActualizar.Enabled = false;
+                    mtbCodEstado.Visible = false;
+                    lblCodEstado.Visible = false;
 
-                    MessageBox.Show("Expediente Actualizado con exito");
+                    MessageBox.Show("Estado actualizado con éxito");
                     LimpiarCampos();
                     CargarGrilla();
                 }
@@ -310,6 +317,8 @@ namespace TPI
                     MessageBox.Show("Eliminado con exito");
                     CargarGrilla();
                     LimpiarCampos();
+                    mtbCodEstado.Visible = false;
+                    lblCodEstado.Visible = false;
                 }
                 else
                 {

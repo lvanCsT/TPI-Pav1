@@ -88,6 +88,7 @@
             // 
             // mtbIdDepartamento
             // 
+            this.mtbIdDepartamento.Enabled = false;
             this.mtbIdDepartamento.Location = new System.Drawing.Point(109, 36);
             this.mtbIdDepartamento.Mask = "9999";
             this.mtbIdDepartamento.Name = "mtbIdDepartamento";

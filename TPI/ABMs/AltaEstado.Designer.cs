@@ -120,6 +120,7 @@
             // 
             // mtbCodEstado
             // 
+            this.mtbCodEstado.Enabled = false;
             this.mtbCodEstado.Location = new System.Drawing.Point(109, 36);
             this.mtbCodEstado.Mask = "9999";
             this.mtbCodEstado.Name = "mtbCodEstado";
