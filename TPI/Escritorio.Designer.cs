@@ -38,10 +38,12 @@
             this.altaExpedientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaBarrioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.elementosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.graficosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.elementosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,7 +98,9 @@
             this.altaExpedientesToolStripMenuItem,
             this.altaBarrioToolStripMenuItem,
             this.toolStripMenuItem1,
-            this.elementosToolStripMenuItem});
+            this.elementosToolStripMenuItem,
+            this.estadosToolStripMenuItem,
+            this.altaDepartamentosToolStripMenuItem});
             this.aBMsToolStripMenuItem.Name = "aBMsToolStripMenuItem";
             this.aBMsToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.aBMsToolStripMenuItem.Text = "ABMs";
@@ -129,6 +133,12 @@
             this.toolStripMenuItem1.Text = "Prestaciones";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
+            // elementosToolStripMenuItem
+            // 
+            this.elementosToolStripMenuItem.Name = "elementosToolStripMenuItem";
+            this.elementosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.elementosToolStripMenuItem.Text = "Elementos";
+            // 
             // procesosToolStripMenuItem
             // 
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
@@ -147,11 +157,19 @@
             this.graficosToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.graficosToolStripMenuItem.Text = "Graficos";
             // 
-            // elementosToolStripMenuItem
+            // estadosToolStripMenuItem
             // 
-            this.elementosToolStripMenuItem.Name = "elementosToolStripMenuItem";
-            this.elementosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.elementosToolStripMenuItem.Text = "Elementos";
+            this.estadosToolStripMenuItem.Name = "estadosToolStripMenuItem";
+            this.estadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.estadosToolStripMenuItem.Text = "Alta Estados";
+            this.estadosToolStripMenuItem.Click += new System.EventHandler(this.estadosToolStripMenuItem_Click);
+            // 
+            // altaDepartamentosToolStripMenuItem
+            // 
+            this.altaDepartamentosToolStripMenuItem.Name = "altaDepartamentosToolStripMenuItem";
+            this.altaDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.altaDepartamentosToolStripMenuItem.Text = "Alta Departamentos";
+            this.altaDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.altaDepartamentosToolStripMenuItem_Click);
             // 
             // Escritorio
             // 
@@ -164,7 +182,9 @@
             this.Controls.Add(this.menuStrip2);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Escritorio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Escritorio";
+            this.Load += new System.EventHandler(this.Escritorio_Load);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
@@ -188,5 +208,7 @@
         private System.Windows.Forms.ToolStripMenuItem altaBarrioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem elementosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem altaDepartamentosToolStripMenuItem;
     }
 }

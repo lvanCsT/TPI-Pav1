@@ -59,6 +59,12 @@
     <Compile Include="ABMs\AltaBarrio.Designer.cs">
       <DependentUpon>AltaBarrio.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABMs\AltaDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\AltaDepartamento.Designer.cs">
+      <DependentUpon>AltaDepartamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="ABMs\AltaExpediente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,7 +79,9 @@
     </Compile>
     <Compile Include="Entidades\Afiliado.cs" />
     <Compile Include="Entidades\Barrio.cs" />
+    <Compile Include="Entidades\Departamento.cs" />
     <Compile Include="Entidades\Elemento.cs" />
+    <Compile Include="Entidades\Estado.cs" />
     <Compile Include="Entidades\Expediente.cs" />
     <Compile Include="Entidades\Prestacion.cs" />
     <Compile Include="Escritorio.cs">
@@ -82,6 +90,12 @@
     <Compile Include="Escritorio.Designer.cs">
       <DependentUpon>Escritorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABMs\AltaEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\AltaEstado.Designer.cs">
+      <DependentUpon>AltaEstado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ABMs\AltaAfiliado.resx">
@@ -89,6 +103,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABMs\AltaBarrio.resx">
       <DependentUpon>AltaBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\AltaDepartamento.resx">
+      <DependentUpon>AltaDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\AltaEstado.resx">
+      <DependentUpon>AltaEstado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ABMs\AltaExpediente.resx">
       <DependentUpon>AltaExpediente.cs</DependentUpon>

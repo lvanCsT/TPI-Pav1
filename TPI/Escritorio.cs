@@ -49,5 +49,22 @@ namespace TPI
             AltaPrestacion ventana = new AltaPrestacion();
             ventana.ShowDialog();
         }
+
+        private void estadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaEstado ventana = new AltaEstado();
+            ventana.Show();
+        }
+
+        private void altaDepartamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaDepartamento ventana = new AltaDepartamento();
+            ventana.Show();
+        }
+
+        private void Escritorio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
