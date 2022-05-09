@@ -94,6 +94,7 @@
             this.mtbIdDepartamento.Name = "mtbIdDepartamento";
             this.mtbIdDepartamento.Size = new System.Drawing.Size(91, 20);
             this.mtbIdDepartamento.TabIndex = 42;
+            this.mtbIdDepartamento.Text = "0";
             this.mtbIdDepartamento.ValidatingType = typeof(int);
             // 
             // lblIdDepartamento
@@ -181,13 +182,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(465, 250);
             this.Controls.Add(this.btnBajaDepartamento);
             this.Controls.Add(this.btnAltaDepartamento);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.gbDepartamentos);
             this.Controls.Add(this.gbAltaDepartamento);
             this.Name = "AltaDepartamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alta Departamento";
             this.Load += new System.EventHandler(this.AltaDepartamento_Load);
             this.gbAltaDepartamento.ResumeLayout(false);

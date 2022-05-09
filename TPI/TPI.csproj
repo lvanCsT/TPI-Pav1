@@ -65,6 +65,12 @@
     <Compile Include="ABMs\AltaDepartamento.Designer.cs">
       <DependentUpon>AltaDepartamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABMs\AltaDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\AltaDocumento.Designer.cs">
+      <DependentUpon>AltaDocumento.cs</DependentUpon>
+    </Compile>
     <Compile Include="ABMs\AltaExpediente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,7 @@
     <Compile Include="Entidades\Afiliado.cs" />
     <Compile Include="Entidades\Barrio.cs" />
     <Compile Include="Entidades\Departamento.cs" />
+    <Compile Include="Entidades\Documento.cs" />
     <Compile Include="Entidades\Elemento.cs" />
     <Compile Include="Entidades\Estado.cs" />
     <Compile Include="Entidades\Expediente.cs" />
@@ -106,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABMs\AltaDepartamento.resx">
       <DependentUpon>AltaDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\AltaDocumento.resx">
+      <DependentUpon>AltaDocumento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ABMs\AltaEstado.resx">
       <DependentUpon>AltaEstado.cs</DependentUpon>

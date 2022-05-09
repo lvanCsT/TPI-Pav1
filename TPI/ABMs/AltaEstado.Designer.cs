@@ -126,6 +126,7 @@
             this.mtbCodEstado.Name = "mtbCodEstado";
             this.mtbCodEstado.Size = new System.Drawing.Size(150, 20);
             this.mtbCodEstado.TabIndex = 42;
+            this.mtbCodEstado.Text = "0";
             this.mtbCodEstado.ValidatingType = typeof(int);
             // 
             // gbEstados
@@ -213,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(726, 353);
+            this.ClientSize = new System.Drawing.Size(676, 334);
             this.Controls.Add(this.btnBajaEstado);
             this.Controls.Add(this.btnAltaEstado);
             this.Controls.Add(this.btnActualizar);

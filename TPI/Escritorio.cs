@@ -66,5 +66,11 @@ namespace TPI
         {
 
         }
+
+        private void altaDocumentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaDocumento ventana = new AltaDocumento();
+            ventana.Show();
+        }
     }
 }

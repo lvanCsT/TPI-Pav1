@@ -10,21 +10,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TPI.Entidades;
 
-namespace TPI
+namespace TPI.ABMs
 {
-    public partial class AltaEstado : Form
+    public partial class AltaDocumento : Form
     {
-        public AltaEstado()
+        public AltaDocumento()
         {
             InitializeComponent();
         }
 
-        private void AltaEstado_Load(object sender, EventArgs e)
+        private void AltaDocumento_Load(object sender, EventArgs e)
         {
             btnActualizar.Enabled = false;
-            mtbCodEstado.Enabled = false;
-            mtbCodEstado.Visible = false;
-            lblCodEstado.Visible = false;
+            maskedCodDoc.Enabled = false;
+            maskedCodDoc.Visible = false;
+            lblCodigoDocumento.Visible = false;
             CargarGrilla();
         }
 
@@ -37,7 +37,7 @@ namespace TPI
             {
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "SELECT * FROM Estados";
+                string consulta = "SELECT * FROM Documentos";
 
                 cmd.Parameters.Clear();
                 cmd.CommandType = CommandType.Text;
@@ -51,7 +51,7 @@ namespace TPI
 
                 da.Fill(tabla);
 
-                dgbEstados.DataSource = tabla;
+                dgvDoc.DataSource = tabla;
             }
             catch (Exception ex)
             {
@@ -63,30 +63,19 @@ namespace TPI
             }
         }
 
-        //obtiene los datos del Estado ingresados y los guarda en un objeto Estado
-        private Estado ObtenerDatosEstado()
+        //obtiene los datos del Documento ingresados y los guarda en un objeto Documento
+        private Documento ObtenerDatosDocumento()
         {
-            Estado est = new Estado();
-            est.CodigoEstado = int.Parse(mtbCodEstado.Text);
-            est.Nombre = tbNombre.Text.Trim();
-            est.Descripcion = rtbDescripcion.Text;
+            Documento doc = new Documento();
+            doc.CodigoDocumento = int.Parse(maskedCodDoc.Text);
+            doc.Nombre = tbNombre.Text.Trim();
+            doc.Descripcion = rtbDescripcion.Text;
 
-            return est;
+            return doc;
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCodPrestacion_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        //Boton que da de alta un Estado
-        private void btnAltaEstado_Click(object sender, EventArgs e)
+        private void btnAltaDocumento_Click(object sender, EventArgs e)
         {
             if (validarIngresoDatos())
             {
@@ -94,10 +83,10 @@ namespace TPI
             }
             else
             {
-                Estado est = ObtenerDatosEstado();
+                Documento doc = ObtenerDatosDocumento();
 
 
-                if (CargarEstado(est))
+                if (CargarDocumento(doc))
                 {
                     MessageBox.Show("Cargado Con Exito", "Carga completa");
                     LimpiarCampos();
@@ -110,8 +99,16 @@ namespace TPI
             }
         }
 
+        //Metodo para validar campos completos
+        private bool validarIngresoDatos()
+        {
+            bool resultado = tbNombre.Text.Equals("") || rtbDescripcion.Text.Equals("");
+
+            return resultado;
+        }
+
         //Metodo para cargar Estado
-        private bool CargarEstado(Estado est)
+        private bool CargarDocumento(Documento doc)
         {
             string cadenaConex = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConex);
@@ -120,10 +117,10 @@ namespace TPI
             {
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "insert into Estados VALUES (@Nombre, @Descripcion)";
+                string consulta = "insert into Documentos VALUES (@Nombre, @Descripcion)";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@Nombre", est.Nombre);
-                cmd.Parameters.AddWithValue("@Descripcion", est.Descripcion);
+                cmd.Parameters.AddWithValue("@Nombre", doc.Nombre);
+                cmd.Parameters.AddWithValue("@Descripcion", doc.Descripcion);
 
 
                 cmd.CommandType = CommandType.Text;
@@ -151,51 +148,41 @@ namespace TPI
         //Metodo para limpiar campos
         private void LimpiarCampos()
         {
-            mtbCodEstado.Text = "";
+            maskedCodDoc.Text = "";
             tbNombre.Text = "";
             rtbDescripcion.Text = "";
-            
-        }
-
-        //Metodo para validar campos completos
-        private bool validarIngresoDatos()
-        {
-            bool resultado = tbNombre.Text.Equals("") || rtbDescripcion.Text.Equals("");
-
-            return resultado;
         }
 
         //Ejecuta metodo limpiar campos
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
-            mtbCodEstado.Visible = false;
-            lblCodEstado.Visible = false;
+            maskedCodDoc.Visible = false;
+            lblCodigoDocumento.Visible = false;
             btnActualizar.Enabled = false;
         }
 
         //carga los textbox con los datos de la BD para luego modificar
-        private void CargarCampos(Estado est)
+        private void CargarCampos(Documento doc)
         {
-            mtbCodEstado.Text = est.CodigoEstado.ToString();
-            tbNombre.Text = est.Nombre;
-            rtbDescripcion.Text = est.Descripcion;
-
+            maskedCodDoc.Text = doc.CodigoDocumento.ToString();
+            tbNombre.Text = doc.Nombre;
+            rtbDescripcion.Text = doc.Descripcion;
         }
 
-        //obtiene un objeto Estado con todos sus datos para un codigo estado especifico
-        private Estado ObtenerEstado(string CodigoEstado)
+        //obtiene un objeto Documento con todos sus datos para un codigo documento especifico
+        private Documento ObtenerDocumento(string CodigoDocumento)
         {
             string cadenaConex = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConex);
-            Estado est = new Estado();
+            Documento doc = new Documento();
             try
             {
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "SELECT * FROM Estados WHERE CodEstado = @CodigoEstado";
+                string consulta = "SELECT * FROM Documentos WHERE CodDocumento = @CodigoDocumento";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@CodigoEstado", CodigoEstado);
+                cmd.Parameters.AddWithValue("@CodigoDocumento", CodigoDocumento);
 
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
@@ -206,9 +193,9 @@ namespace TPI
 
                 if (dataReader != null && dataReader.Read())
                 {
-                    est.CodigoEstado = int.Parse(CodigoEstado);
-                    est.Nombre = dataReader["Nombre"].ToString();
-                    est.Descripcion = dataReader["Descripcion"].ToString();
+                    doc.CodigoDocumento = int.Parse(CodigoDocumento);
+                    doc.Nombre = dataReader["Nombre"].ToString();
+                    doc.Descripcion = dataReader["Descripcion"].ToString();
 
                 }
             }
@@ -222,22 +209,22 @@ namespace TPI
             {
                 cn.Close();
             }
-            return est;
+            return doc;
         }
 
         //Metodo para seleccionar celda
-        private void dgbEstados_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvDoc_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int indice = e.RowIndex;
             btnActualizar.Enabled = true;
-            mtbCodEstado.Visible = true;
-            lblCodEstado.Visible = true;
-            DataGridViewRow filaSeleccionada = dgbEstados.Rows[indice];
-            string CodigoEstado = filaSeleccionada.Cells["CodigoEstado"].Value.ToString();
-            Estado est = ObtenerEstado(CodigoEstado);
+            maskedCodDoc.Visible = true;
+            lblCodigoDocumento.Visible = true;
+            DataGridViewRow filaSeleccionada = dgvDoc.Rows[indice];
+            string CodigoDocumento = filaSeleccionada.Cells["CodigoDocumento"].Value.ToString();
+            Documento doc = ObtenerDocumento(CodigoDocumento);
             LimpiarCampos();
 
-            CargarCampos(est);
+            CargarCampos(doc);
         }
 
         //Actualiza la BD y la grilla
@@ -245,29 +232,28 @@ namespace TPI
         {
             if (validarIngresoDatos())
             {
-                MessageBox.Show("Ingrese Todos los datos","Advertencia");
+                MessageBox.Show("Ingrese Todos los datos", "Advertencia");
             }
             else
             {
-                Estado est = ObtenerDatosEstado();
-                if (ActualizarEstado(est))
+                Documento doc = ObtenerDatosDocumento();
+                if (ActualizarDocumento(doc))
                 {
                     btnActualizar.Enabled = false;
-                    mtbCodEstado.Visible = false;
-                    lblCodEstado.Visible = false;
+                    maskedCodDoc.Visible = false;
+                    lblCodigoDocumento.Visible = false;
 
-                    MessageBox.Show("Estado actualizado con éxito");
+                    MessageBox.Show("Documento actualizado con éxito");
                     LimpiarCampos();
                     CargarGrilla();
                 }
                 else
                 {
-                    MessageBox.Show("Error al actualizar","Advertencia");
+                    MessageBox.Show("Error al actualizar", "Advertencia");
                 }
             }
         }
-
-        private bool ActualizarEstado(Estado est)
+        private bool ActualizarDocumento(Documento doc)
         {
             string cadenaConex = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConex);
@@ -276,12 +262,12 @@ namespace TPI
             {
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "UPDATE Estados SET Descripcion = @Descripcion, Nombre = @Nombre" +
-                    " WHERE CodEstado = @CodEstado";
+                string consulta = "UPDATE Documentos SET Descripcion = @Descripcion, Nombre = @Nombre" +
+                    " WHERE CodDocumento = @CodDocumento";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@CodEstado", est.CodigoEstado);
-                cmd.Parameters.AddWithValue("@Nombre", est.Nombre);
-                cmd.Parameters.AddWithValue("@Descripcion", est.Descripcion);
+                cmd.Parameters.AddWithValue("@CodDocumento", doc.CodigoDocumento);
+                cmd.Parameters.AddWithValue("@Nombre", doc.Nombre);
+                cmd.Parameters.AddWithValue("@Descripcion", doc.Descripcion);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
 
@@ -304,34 +290,31 @@ namespace TPI
             return Resultado;
         }
 
-
-        //Elimina una fila/tupla de la BD y actualiza la grilla
-        private void btnBajaEstado_Click(object sender, EventArgs e)
+        private void btnBajaDocumento_Click(object sender, EventArgs e)
         {
-            if (mtbCodEstado.Text.Equals("0"))
+            if (maskedCodDoc.Text.Equals("0"))
             {
-                MessageBox.Show("Seleccione algun Estado para eliminar");
+                MessageBox.Show("Seleccione algun Documento para eliminar");
             }
             else
             {
-                if (EliminarEstado(mtbCodEstado.Text))
+                if (EliminarDocumento(maskedCodDoc.Text))
                 {
                     MessageBox.Show("Eliminado con exito");
                     CargarGrilla();
                     LimpiarCampos();
-                    mtbCodEstado.Visible = false;
-                    lblCodEstado.Visible = false;
+                    maskedCodDoc.Visible = false;
+                    lblCodigoDocumento.Visible = false;
                     btnActualizar.Enabled = false;
                 }
                 else
                 {
-                    MessageBox.Show("Error, no se pudo eliminar","Advertencia");
+                    MessageBox.Show("Error, no se pudo eliminar", "Advertencia");
                 }
             }
         }
-
         //Elimina una fila/tupla de la BD
-        private bool EliminarEstado(string CodigoEstado)
+        private bool EliminarDocumento(string CodigoDocumento)
         {
             bool Resultado = false;
             string cadenaConex = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
@@ -341,9 +324,9 @@ namespace TPI
             {
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = " DELETE FROM Estados WHERE CodEstado = @CodigoEstado";
+                string consulta = " DELETE FROM Documentos WHERE CodDocumento = @CodigoDocumento";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@CodigoEstado", CodigoEstado);
+                cmd.Parameters.AddWithValue("@CodigoDocumento", CodigoDocumento);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
 
@@ -365,4 +348,6 @@ namespace TPI
             return Resultado;
         }
     }
+
+
 }

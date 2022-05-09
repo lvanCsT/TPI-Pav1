@@ -44,3 +44,4 @@ D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.exe
 D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.pdb
 D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.AltaEstado.resources
 D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaDepartamento.resources
+D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaDocumento.resources

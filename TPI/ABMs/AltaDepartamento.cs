@@ -163,6 +163,7 @@ namespace TPI.ABMs
             LimpiarCampos();
             mtbIdDepartamento.Visible = false;
             lblIdDepartamento.Visible = false;
+            btnActualizar.Enabled = false;
         }
 
         private void dgbDepartamentos_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -295,7 +296,7 @@ namespace TPI.ABMs
         //Elimina una fila/tupla de la BD y actualiza la grilla
         private void btnBajaDepartamento_Click(object sender, EventArgs e)
         {
-            if (mtbIdDepartamento.Text.Equals(""))
+            if (mtbIdDepartamento.Text.Equals("0"))
             {
                 MessageBox.Show("Seleccione algun Departamento para eliminar");
             }
@@ -304,7 +305,11 @@ namespace TPI.ABMs
                 if (EliminarDepartamento(mtbIdDepartamento.Text))
                 {
                     MessageBox.Show("Eliminado con exito");
+                
                     CargarGrilla();
+                    mtbIdDepartamento.Visible = false;
+                    lblIdDepartamento.Visible = false;
+                    btnActualizar.Enabled = false;
                     LimpiarCampos();
                 }
                 else
