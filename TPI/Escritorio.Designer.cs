@@ -39,11 +39,11 @@
             this.altaBarrioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.elementosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.graficosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.estadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.altaDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -139,6 +139,20 @@
             this.elementosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.elementosToolStripMenuItem.Text = "Elementos";
             // 
+            // estadosToolStripMenuItem
+            // 
+            this.estadosToolStripMenuItem.Name = "estadosToolStripMenuItem";
+            this.estadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.estadosToolStripMenuItem.Text = "Alta Estados";
+            this.estadosToolStripMenuItem.Click += new System.EventHandler(this.estadosToolStripMenuItem_Click);
+            // 
+            // altaDepartamentosToolStripMenuItem
+            // 
+            this.altaDepartamentosToolStripMenuItem.Name = "altaDepartamentosToolStripMenuItem";
+            this.altaDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.altaDepartamentosToolStripMenuItem.Text = "Alta Departamentos";
+            this.altaDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.altaDepartamentosToolStripMenuItem_Click);
+            // 
             // procesosToolStripMenuItem
             // 
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
@@ -156,20 +170,6 @@
             this.graficosToolStripMenuItem.Name = "graficosToolStripMenuItem";
             this.graficosToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.graficosToolStripMenuItem.Text = "Graficos";
-            // 
-            // estadosToolStripMenuItem
-            // 
-            this.estadosToolStripMenuItem.Name = "estadosToolStripMenuItem";
-            this.estadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.estadosToolStripMenuItem.Text = "Alta Estados";
-            this.estadosToolStripMenuItem.Click += new System.EventHandler(this.estadosToolStripMenuItem_Click);
-            // 
-            // altaDepartamentosToolStripMenuItem
-            // 
-            this.altaDepartamentosToolStripMenuItem.Name = "altaDepartamentosToolStripMenuItem";
-            this.altaDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.altaDepartamentosToolStripMenuItem.Text = "Alta Departamentos";
-            this.altaDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.altaDepartamentosToolStripMenuItem_Click);
             // 
             // Escritorio
             // 
