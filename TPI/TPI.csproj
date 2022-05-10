@@ -83,7 +83,20 @@
     <Compile Include="ABMs\AltaPrestacion.Designer.cs">
       <DependentUpon>AltaPrestacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABMs\AltaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\AltaUsuario.Designer.cs">
+      <DependentUpon>AltaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\AltaAtenciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\AltaAtenciones.Designer.cs">
+      <DependentUpon>AltaAtenciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\Afiliado.cs" />
+    <Compile Include="Entidades\Atencion.cs" />
     <Compile Include="Entidades\Barrio.cs" />
     <Compile Include="Entidades\Departamento.cs" />
     <Compile Include="Entidades\Documento.cs" />
@@ -91,6 +104,7 @@
     <Compile Include="Entidades\Estado.cs" />
     <Compile Include="Entidades\Expediente.cs" />
     <Compile Include="Entidades\Prestacion.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Escritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +139,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABMs\AltaPrestacion.resx">
       <DependentUpon>AltaPrestacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\AltaUsuario.resx">
+      <DependentUpon>AltaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\AltaAtenciones.resx">
+      <DependentUpon>AltaAtenciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Escritorio.resx">
       <DependentUpon>Escritorio.cs</DependentUpon>

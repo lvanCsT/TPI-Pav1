@@ -27,6 +27,7 @@ C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.exe
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.pdb
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaPrestacion.resources
+<<<<<<< Updated upstream
 D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\bin\Debug\TPI.exe.config
 D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\bin\Debug\TPI.exe
 D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\bin\Debug\TPI.pdb
@@ -45,3 +46,22 @@ D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.pdb
 D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.AltaEstado.resources
 D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaDepartamento.resources
 D:\USUARIO\Desktop\utn\2022\PAV1\Grupo7\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaDocumento.resources
+=======
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\bin\Debug\TPI.exe.config
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\bin\Debug\TPI.exe
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\bin\Debug\TPI.pdb
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\obj\Debug\TPI.csproj.AssemblyReference.cache
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\obj\Debug\TPI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\obj\Debug\TPI.AltaAfiliado.resources
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaBarrio.resources
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaExpediente.resources
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaPrestacion.resources
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaUsuario.resources
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\obj\Debug\TPI.Escritorio.resources
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\obj\Debug\TPI.Properties.Resources.resources
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\obj\Debug\TPI.csproj.GenerateResource.cache
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\obj\Debug\TPI.csproj.CoreCompileInputs.cache
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\obj\Debug\TPI.exe
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\obj\Debug\TPI.pdb
+C:\Users\Maximo pc\OneDrive\Escritorio\PAV1\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaAtenciones.resources
+>>>>>>> Stashed changes

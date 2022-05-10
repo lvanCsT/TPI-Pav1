@@ -50,6 +50,7 @@ namespace TPI
             ventana.ShowDialog();
         }
 
+<<<<<<< Updated upstream
         private void estadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AltaEstado ventana = new AltaEstado();
@@ -71,6 +72,18 @@ namespace TPI
         {
             AltaDocumento ventana = new AltaDocumento();
             ventana.Show();
+=======
+        private void altaUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaUsuario ventana = new AltaUsuario();
+            ventana.ShowDialog();
+        }
+
+        private void altaAtencionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaAtenciones ventana = new AltaAtenciones();
+            ventana.ShowDialog();
+>>>>>>> Stashed changes
         }
     }
 }
