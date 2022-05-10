@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.maskedTextBoxNroCalle = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxNroDocumento = new System.Windows.Forms.MaskedTextBox();
             this.labelNroAfiliado = new System.Windows.Forms.Label();
             this.textBoxNroAfiliado = new System.Windows.Forms.TextBox();
             this.maskedTextBoxFechaNac = new System.Windows.Forms.MaskedTextBox();
@@ -63,8 +65,6 @@
             this.barrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonEliminar = new System.Windows.Forms.Button();
             this.buttonActualizar = new System.Windows.Forms.Button();
-            this.maskedTextBoxNroDocumento = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBoxNroCalle = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAfiliados)).BeginInit();
@@ -99,6 +99,25 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Afiliado";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // maskedTextBoxNroCalle
+            // 
+            this.maskedTextBoxNroCalle.Location = new System.Drawing.Point(131, 242);
+            this.maskedTextBoxNroCalle.Mask = "999999";
+            this.maskedTextBoxNroCalle.Name = "maskedTextBoxNroCalle";
+            this.maskedTextBoxNroCalle.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBoxNroCalle.TabIndex = 18;
+            this.maskedTextBoxNroCalle.ValidatingType = typeof(int);
+            // 
+            // maskedTextBoxNroDocumento
+            // 
+            this.maskedTextBoxNroDocumento.Location = new System.Drawing.Point(131, 164);
+            this.maskedTextBoxNroDocumento.Mask = "99999999";
+            this.maskedTextBoxNroDocumento.Name = "maskedTextBoxNroDocumento";
+            this.maskedTextBoxNroDocumento.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBoxNroDocumento.TabIndex = 13;
+            this.maskedTextBoxNroDocumento.ValidatingType = typeof(int);
             // 
             // labelNroAfiliado
             // 
@@ -399,24 +418,6 @@
             this.buttonActualizar.Text = "Actualizar";
             this.buttonActualizar.UseVisualStyleBackColor = true;
             this.buttonActualizar.Click += new System.EventHandler(this.buttonActualizar_Click);
-            // 
-            // maskedTextBoxNroDocumento
-            // 
-            this.maskedTextBoxNroDocumento.Location = new System.Drawing.Point(131, 164);
-            this.maskedTextBoxNroDocumento.Mask = "9999999";
-            this.maskedTextBoxNroDocumento.Name = "maskedTextBoxNroDocumento";
-            this.maskedTextBoxNroDocumento.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBoxNroDocumento.TabIndex = 13;
-            this.maskedTextBoxNroDocumento.ValidatingType = typeof(int);
-            // 
-            // maskedTextBoxNroCalle
-            // 
-            this.maskedTextBoxNroCalle.Location = new System.Drawing.Point(131, 242);
-            this.maskedTextBoxNroCalle.Mask = "999999";
-            this.maskedTextBoxNroCalle.Name = "maskedTextBoxNroCalle";
-            this.maskedTextBoxNroCalle.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBoxNroCalle.TabIndex = 18;
-            this.maskedTextBoxNroCalle.ValidatingType = typeof(int);
             // 
             // AltaAfiliado
             // 

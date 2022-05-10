@@ -17,7 +17,7 @@ namespace TPI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Escritorio());
+            Application.Run(new LoginForm());
         }
     }
 }

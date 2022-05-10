@@ -44,6 +44,83 @@ namespace TPI
             this.Close();
         }
 
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AltaPrestacion ventana = new AltaPrestacion();
+            ventana.ShowDialog();
+        }
 
+        private void estadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaEstado ventana = new AltaEstado();
+            ventana.ShowDialog();
+        }
+
+        private void altaDepartamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaDepartamento ventana = new AltaDepartamento();
+            ventana.Show();
+        }
+
+        private void Escritorio_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void altaDocumentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaDocumento ventana = new AltaDocumento();
+            ventana.ShowDialog();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            AltaOdonto ventana = new AltaOdonto();
+            ventana.ShowDialog();
+        }
+
+        private void altaTipoOdontologoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaTipoOdonto ventana = new AltaTipoOdonto();
+            ventana.ShowDialog();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            AltaAtenciones ventana = new AltaAtenciones();
+            ventana.ShowDialog();
+        }
+
+        private void altaUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaUsuario ventana = new AltaUsuario();
+            ventana.ShowDialog();
+        }
+
+        private void elementosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaElemento ventana = new AltaElemento();
+            ventana.ShowDialog();
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoginForm ventana = new LoginForm();
+            ventana.Show();
+            this.Close();
+
+        }
+
+        private void altaCategoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaCategoria ventana = new AltaCategoria();
+            ventana.ShowDialog();
+        }
+
+        private void altaCiudadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaCiudades ventana = new AltaCiudades();
+            ventana.ShowDialog();
+        }
     }
 }

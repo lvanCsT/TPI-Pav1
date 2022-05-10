@@ -42,7 +42,11 @@
             this.textBoxNroExpe = new System.Windows.Forms.TextBox();
             this.maskedTextBoxFechaInicio = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBoxReintegro = new System.Windows.Forms.MaskedTextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpe)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewExpe
@@ -54,10 +58,10 @@
             this.NroExpediente,
             this.FechaInicio,
             this.Reintegro});
-            this.dataGridViewExpe.Location = new System.Drawing.Point(240, 41);
+            this.dataGridViewExpe.Location = new System.Drawing.Point(10, 19);
             this.dataGridViewExpe.Name = "dataGridViewExpe";
             this.dataGridViewExpe.ReadOnly = true;
-            this.dataGridViewExpe.Size = new System.Drawing.Size(240, 150);
+            this.dataGridViewExpe.Size = new System.Drawing.Size(343, 150);
             this.dataGridViewExpe.TabIndex = 5;
             this.dataGridViewExpe.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewExpe_CellClick);
             // 
@@ -85,7 +89,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 67);
+            this.label1.Location = new System.Drawing.Point(6, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 6;
@@ -94,7 +98,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 94);
+            this.label2.Location = new System.Drawing.Point(15, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 7;
@@ -102,7 +106,7 @@
             // 
             // buttonActualizar
             // 
-            this.buttonActualizar.Location = new System.Drawing.Point(15, 168);
+            this.buttonActualizar.Location = new System.Drawing.Point(12, 196);
             this.buttonActualizar.Name = "buttonActualizar";
             this.buttonActualizar.Size = new System.Drawing.Size(75, 23);
             this.buttonActualizar.TabIndex = 16;
@@ -112,7 +116,7 @@
             // 
             // buttonEliminar
             // 
-            this.buttonEliminar.Location = new System.Drawing.Point(316, 224);
+            this.buttonEliminar.Location = new System.Drawing.Point(269, 196);
             this.buttonEliminar.Name = "buttonEliminar";
             this.buttonEliminar.Size = new System.Drawing.Size(95, 23);
             this.buttonEliminar.TabIndex = 14;
@@ -122,7 +126,7 @@
             // 
             // buttonAltaExpe
             // 
-            this.buttonAltaExpe.Location = new System.Drawing.Point(108, 168);
+            this.buttonAltaExpe.Location = new System.Drawing.Point(101, 196);
             this.buttonAltaExpe.Name = "buttonAltaExpe";
             this.buttonAltaExpe.Size = new System.Drawing.Size(95, 23);
             this.buttonAltaExpe.TabIndex = 13;
@@ -132,7 +136,7 @@
             // 
             // buttonLimpiar
             // 
-            this.buttonLimpiar.Location = new System.Drawing.Point(49, 132);
+            this.buttonLimpiar.Location = new System.Drawing.Point(84, 127);
             this.buttonLimpiar.Name = "buttonLimpiar";
             this.buttonLimpiar.Size = new System.Drawing.Size(127, 23);
             this.buttonLimpiar.TabIndex = 15;
@@ -143,7 +147,7 @@
             // labelNroExpe
             // 
             this.labelNroExpe.AutoSize = true;
-            this.labelNroExpe.Location = new System.Drawing.Point(12, 9);
+            this.labelNroExpe.Location = new System.Drawing.Point(20, 22);
             this.labelNroExpe.Name = "labelNroExpe";
             this.labelNroExpe.Size = new System.Drawing.Size(48, 13);
             this.labelNroExpe.TabIndex = 28;
@@ -151,7 +155,7 @@
             // 
             // textBoxNroExpe
             // 
-            this.textBoxNroExpe.Location = new System.Drawing.Point(76, 6);
+            this.textBoxNroExpe.Location = new System.Drawing.Point(84, 19);
             this.textBoxNroExpe.Name = "textBoxNroExpe";
             this.textBoxNroExpe.ReadOnly = true;
             this.textBoxNroExpe.Size = new System.Drawing.Size(100, 20);
@@ -160,7 +164,7 @@
             // 
             // maskedTextBoxFechaInicio
             // 
-            this.maskedTextBoxFechaInicio.Location = new System.Drawing.Point(76, 64);
+            this.maskedTextBoxFechaInicio.Location = new System.Drawing.Point(84, 55);
             this.maskedTextBoxFechaInicio.Mask = "00/00/0000";
             this.maskedTextBoxFechaInicio.Name = "maskedTextBoxFechaInicio";
             this.maskedTextBoxFechaInicio.Size = new System.Drawing.Size(100, 20);
@@ -169,35 +173,58 @@
             // 
             // maskedTextBoxReintegro
             // 
-            this.maskedTextBoxReintegro.Location = new System.Drawing.Point(76, 94);
+            this.maskedTextBoxReintegro.Location = new System.Drawing.Point(84, 91);
             this.maskedTextBoxReintegro.Mask = "999999999";
             this.maskedTextBoxReintegro.Name = "maskedTextBoxReintegro";
             this.maskedTextBoxReintegro.Size = new System.Drawing.Size(100, 20);
             this.maskedTextBoxReintegro.TabIndex = 30;
             this.maskedTextBoxReintegro.ValidatingType = typeof(int);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.maskedTextBoxReintegro);
+            this.groupBox1.Controls.Add(this.maskedTextBoxFechaInicio);
+            this.groupBox1.Controls.Add(this.labelNroExpe);
+            this.groupBox1.Controls.Add(this.textBoxNroExpe);
+            this.groupBox1.Controls.Add(this.buttonLimpiar);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(236, 178);
+            this.groupBox1.TabIndex = 31;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Expediente";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dataGridViewExpe);
+            this.groupBox2.Location = new System.Drawing.Point(259, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(369, 178);
+            this.groupBox2.TabIndex = 32;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Listado Expedientes";
+            // 
             // AltaExpediente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 278);
-            this.Controls.Add(this.maskedTextBoxReintegro);
-            this.Controls.Add(this.maskedTextBoxFechaInicio);
-            this.Controls.Add(this.labelNroExpe);
-            this.Controls.Add(this.textBoxNroExpe);
-            this.Controls.Add(this.buttonActualizar);
+            this.ClientSize = new System.Drawing.Size(787, 278);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonEliminar);
             this.Controls.Add(this.buttonAltaExpe);
-            this.Controls.Add(this.buttonLimpiar);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridViewExpe);
+            this.Controls.Add(this.buttonActualizar);
             this.Name = "AltaExpediente";
             this.Text = "AltaExpediente";
             this.Load += new System.EventHandler(this.AltaExpediente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpe)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -216,5 +243,7 @@
         private System.Windows.Forms.TextBox textBoxNroExpe;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxFechaInicio;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxReintegro;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

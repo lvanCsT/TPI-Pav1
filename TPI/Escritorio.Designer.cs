@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Escritorio));
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,20 +36,24 @@
             this.aBMsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaAfiliadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaExpedientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaBarrioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.elementosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaDocumentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaTipoOdontologoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.graficosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.altaBarrioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.altaCategoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaCiudadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Location = new System.Drawing.Point(0, 24);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(400, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // menuStrip2
             // 
@@ -61,7 +65,7 @@
             this.graficosToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(400, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(856, 24);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -79,6 +83,7 @@
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
             this.logOutToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.logOutToolStripMenuItem.Text = "LogOut";
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -92,7 +97,18 @@
             this.aBMsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.altaAfiliadosToolStripMenuItem,
             this.altaExpedientesToolStripMenuItem,
-            this.altaBarrioToolStripMenuItem});
+            this.altaBarrioToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.elementosToolStripMenuItem,
+            this.estadosToolStripMenuItem,
+            this.altaDepartamentosToolStripMenuItem,
+            this.altaDocumentosToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.altaTipoOdontologoToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.altaUsuariosToolStripMenuItem,
+            this.altaCategoriasToolStripMenuItem,
+            this.altaCiudadesToolStripMenuItem});
             this.aBMsToolStripMenuItem.Name = "aBMsToolStripMenuItem";
             this.aBMsToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.aBMsToolStripMenuItem.Text = "ABMs";
@@ -100,16 +116,86 @@
             // altaAfiliadosToolStripMenuItem
             // 
             this.altaAfiliadosToolStripMenuItem.Name = "altaAfiliadosToolStripMenuItem";
-            this.altaAfiliadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.altaAfiliadosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.altaAfiliadosToolStripMenuItem.Text = "Alta Afiliados";
             this.altaAfiliadosToolStripMenuItem.Click += new System.EventHandler(this.altaAfiliadosToolStripMenuItem_Click);
             // 
             // altaExpedientesToolStripMenuItem
             // 
             this.altaExpedientesToolStripMenuItem.Name = "altaExpedientesToolStripMenuItem";
-            this.altaExpedientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.altaExpedientesToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.altaExpedientesToolStripMenuItem.Text = "Alta Expedientes";
             this.altaExpedientesToolStripMenuItem.Click += new System.EventHandler(this.altaExpedientesToolStripMenuItem_Click);
+            // 
+            // altaBarrioToolStripMenuItem
+            // 
+            this.altaBarrioToolStripMenuItem.Name = "altaBarrioToolStripMenuItem";
+            this.altaBarrioToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.altaBarrioToolStripMenuItem.Text = "Alta Barrio";
+            this.altaBarrioToolStripMenuItem.Click += new System.EventHandler(this.altaBarrioToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(194, 22);
+            this.toolStripMenuItem1.Text = "Alta Prestaciones";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // elementosToolStripMenuItem
+            // 
+            this.elementosToolStripMenuItem.Name = "elementosToolStripMenuItem";
+            this.elementosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.elementosToolStripMenuItem.Text = "Alta Elementos";
+            this.elementosToolStripMenuItem.Click += new System.EventHandler(this.elementosToolStripMenuItem_Click);
+            // 
+            // estadosToolStripMenuItem
+            // 
+            this.estadosToolStripMenuItem.Name = "estadosToolStripMenuItem";
+            this.estadosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.estadosToolStripMenuItem.Text = "Alta Estados";
+            this.estadosToolStripMenuItem.Click += new System.EventHandler(this.estadosToolStripMenuItem_Click);
+            // 
+            // altaDepartamentosToolStripMenuItem
+            // 
+            this.altaDepartamentosToolStripMenuItem.Name = "altaDepartamentosToolStripMenuItem";
+            this.altaDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.altaDepartamentosToolStripMenuItem.Text = "Alta Departamentos";
+            this.altaDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.altaDepartamentosToolStripMenuItem_Click);
+            // 
+            // altaDocumentosToolStripMenuItem
+            // 
+            this.altaDocumentosToolStripMenuItem.Name = "altaDocumentosToolStripMenuItem";
+            this.altaDocumentosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.altaDocumentosToolStripMenuItem.Text = "Alta Documentos";
+            this.altaDocumentosToolStripMenuItem.Click += new System.EventHandler(this.altaDocumentosToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(194, 22);
+            this.toolStripMenuItem2.Text = "Alta Odontologos";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // altaTipoOdontologoToolStripMenuItem
+            // 
+            this.altaTipoOdontologoToolStripMenuItem.Name = "altaTipoOdontologoToolStripMenuItem";
+            this.altaTipoOdontologoToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.altaTipoOdontologoToolStripMenuItem.Text = "Alta Tipo Odontologos";
+            this.altaTipoOdontologoToolStripMenuItem.Click += new System.EventHandler(this.altaTipoOdontologoToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(194, 22);
+            this.toolStripMenuItem3.Text = "Alta Atenciones";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            // 
+            // altaUsuariosToolStripMenuItem
+            // 
+            this.altaUsuariosToolStripMenuItem.Name = "altaUsuariosToolStripMenuItem";
+            this.altaUsuariosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.altaUsuariosToolStripMenuItem.Text = "Alta Usuarios";
+            this.altaUsuariosToolStripMenuItem.Click += new System.EventHandler(this.altaUsuariosToolStripMenuItem_Click);
             // 
             // procesosToolStripMenuItem
             // 
@@ -129,12 +215,27 @@
             this.graficosToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.graficosToolStripMenuItem.Text = "Graficos";
             // 
-            // altaBarrioToolStripMenuItem
+            // menuStrip1
             // 
-            this.altaBarrioToolStripMenuItem.Name = "altaBarrioToolStripMenuItem";
-            this.altaBarrioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.altaBarrioToolStripMenuItem.Text = "Alta Barrio";
-            this.altaBarrioToolStripMenuItem.Click += new System.EventHandler(this.altaBarrioToolStripMenuItem_Click);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 24);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(856, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // altaCategoriasToolStripMenuItem
+            // 
+            this.altaCategoriasToolStripMenuItem.Name = "altaCategoriasToolStripMenuItem";
+            this.altaCategoriasToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.altaCategoriasToolStripMenuItem.Text = "Alta Categorias";
+            this.altaCategoriasToolStripMenuItem.Click += new System.EventHandler(this.altaCategoriasToolStripMenuItem_Click);
+            // 
+            // altaCiudadesToolStripMenuItem
+            // 
+            this.altaCiudadesToolStripMenuItem.Name = "altaCiudadesToolStripMenuItem";
+            this.altaCiudadesToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.altaCiudadesToolStripMenuItem.Text = "Alta Ciudades";
+            this.altaCiudadesToolStripMenuItem.Click += new System.EventHandler(this.altaCiudadesToolStripMenuItem_Click);
             // 
             // Escritorio
             // 
@@ -142,12 +243,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TPI.Properties.Resources.diccionario_digital;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(400, 284);
+            this.ClientSize = new System.Drawing.Size(856, 579);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Escritorio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Escritorio";
+            this.Load += new System.EventHandler(this.Escritorio_Load);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
@@ -156,8 +260,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aBMsToolStripMenuItem;
@@ -169,5 +271,17 @@
         private System.Windows.Forms.ToolStripMenuItem informesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem graficosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem altaBarrioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem elementosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem altaDepartamentosToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem altaDocumentosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem altaTipoOdontologoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem altaUsuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem altaCategoriasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem altaCiudadesToolStripMenuItem;
     }
 }

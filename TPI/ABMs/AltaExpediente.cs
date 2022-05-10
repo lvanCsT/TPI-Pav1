@@ -142,6 +142,8 @@ namespace TPI.ABMs
         private void buttonLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
+            textBoxNroExpe.Visible = false;
+            labelNroExpe.Visible = false;
         }
 
         //Limpia los campos
@@ -298,6 +300,8 @@ namespace TPI.ABMs
                     textBoxNroExpe.Text = "0";
                     textBoxNroExpe.Visible = false;
                     labelNroExpe.Visible = false;
+                    buttonActualizar.Enabled = false;
+              
 
                     MessageBox.Show("Eliminado con exito");
                     cargarGrilla();
@@ -352,6 +356,11 @@ namespace TPI.ABMs
             maskedTextBoxReintegro.Text.Equals("");
 
             return resultado;
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

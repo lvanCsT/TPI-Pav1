@@ -279,6 +279,9 @@ namespace TPI
         private void buttonLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
+            textBoxNroAfiliado.Visible = false;
+            labelNroAfiliado.Visible = false;
+            buttonActualizar.Enabled = false;
         }
 
         //Limpia los campos
@@ -467,6 +470,7 @@ namespace TPI
                     textBoxNroAfiliado.Text = "0";
                     textBoxNroAfiliado.Visible = false;
                     labelNroAfiliado.Visible = false;
+                    buttonEliminar.Enabled = false;
 
                     MessageBox.Show("Eliminado con exito");
                     cargarGrilla();
@@ -531,6 +535,11 @@ namespace TPI
             comboBoxBarrio.SelectedText.Equals(null);
 
             return resultado;
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
