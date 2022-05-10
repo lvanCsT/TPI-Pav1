@@ -77,6 +77,12 @@
     <Compile Include="ABMs\AltaDocumento.Designer.cs">
       <DependentUpon>AltaDocumento.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABMs\AltaElemento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\AltaElemento.Designer.cs">
+      <DependentUpon>AltaElemento.cs</DependentUpon>
+    </Compile>
     <Compile Include="ABMs\AltaExpediente.cs">
       <SubType>Form</SubType>
     </Compile>

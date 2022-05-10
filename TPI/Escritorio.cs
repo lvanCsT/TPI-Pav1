@@ -96,5 +96,11 @@ namespace TPI
             AltaUsuario ventana = new AltaUsuario();
             ventana.Show();
         }
+
+        private void elementosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaElemento ventana = new AltaElemento();
+            ventana.Show();
+        }
     }
 }

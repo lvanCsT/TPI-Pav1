@@ -40,6 +40,7 @@ namespace TPI.ABMs
             cmbDescripcion.Items.Add("Odontologia Preventiva");
             cmbDescripcion.Items.Add("Ortodoncia Ortopedia");
             cmbDescripcion.Items.Add("Odontopediatria");
+            CargarGrilla();
         }
 
         //obtiene los datos del Prestacion ingresados en los textbox y los guarda en un objeto Prestacion

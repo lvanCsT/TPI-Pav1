@@ -45,11 +45,11 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.altaTipoOdontologoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.graficosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.altaUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -141,6 +141,7 @@
             this.elementosToolStripMenuItem.Name = "elementosToolStripMenuItem";
             this.elementosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.elementosToolStripMenuItem.Text = "Alta Elementos";
+            this.elementosToolStripMenuItem.Click += new System.EventHandler(this.elementosToolStripMenuItem_Click);
             // 
             // estadosToolStripMenuItem
             // 
@@ -184,6 +185,13 @@
             this.toolStripMenuItem3.Text = "Alta Atenciones";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
+            // altaUsuariosToolStripMenuItem
+            // 
+            this.altaUsuariosToolStripMenuItem.Name = "altaUsuariosToolStripMenuItem";
+            this.altaUsuariosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.altaUsuariosToolStripMenuItem.Text = "Alta Usuarios";
+            this.altaUsuariosToolStripMenuItem.Click += new System.EventHandler(this.altaUsuariosToolStripMenuItem_Click);
+            // 
             // procesosToolStripMenuItem
             // 
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
@@ -209,13 +217,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(856, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // altaUsuariosToolStripMenuItem
-            // 
-            this.altaUsuariosToolStripMenuItem.Name = "altaUsuariosToolStripMenuItem";
-            this.altaUsuariosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.altaUsuariosToolStripMenuItem.Text = "Alta Usuarios";
-            this.altaUsuariosToolStripMenuItem.Click += new System.EventHandler(this.altaUsuariosToolStripMenuItem_Click);
             // 
             // Escritorio
             // 
