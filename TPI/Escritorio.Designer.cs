@@ -42,10 +42,14 @@
             this.estadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaDocumentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaTipoOdontologoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.graficosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.altaUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,7 +99,11 @@
             this.elementosToolStripMenuItem,
             this.estadosToolStripMenuItem,
             this.altaDepartamentosToolStripMenuItem,
-            this.altaDocumentosToolStripMenuItem});
+            this.altaDocumentosToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.altaTipoOdontologoToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.altaUsuariosToolStripMenuItem});
             this.aBMsToolStripMenuItem.Name = "aBMsToolStripMenuItem";
             this.aBMsToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.aBMsToolStripMenuItem.Text = "ABMs";
@@ -103,57 +111,78 @@
             // altaAfiliadosToolStripMenuItem
             // 
             this.altaAfiliadosToolStripMenuItem.Name = "altaAfiliadosToolStripMenuItem";
-            this.altaAfiliadosToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.altaAfiliadosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.altaAfiliadosToolStripMenuItem.Text = "Alta Afiliados";
             this.altaAfiliadosToolStripMenuItem.Click += new System.EventHandler(this.altaAfiliadosToolStripMenuItem_Click);
             // 
             // altaExpedientesToolStripMenuItem
             // 
             this.altaExpedientesToolStripMenuItem.Name = "altaExpedientesToolStripMenuItem";
-            this.altaExpedientesToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.altaExpedientesToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.altaExpedientesToolStripMenuItem.Text = "Alta Expedientes";
             this.altaExpedientesToolStripMenuItem.Click += new System.EventHandler(this.altaExpedientesToolStripMenuItem_Click);
             // 
             // altaBarrioToolStripMenuItem
             // 
             this.altaBarrioToolStripMenuItem.Name = "altaBarrioToolStripMenuItem";
-            this.altaBarrioToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.altaBarrioToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.altaBarrioToolStripMenuItem.Text = "Alta Barrio";
             this.altaBarrioToolStripMenuItem.Click += new System.EventHandler(this.altaBarrioToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(179, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(194, 22);
             this.toolStripMenuItem1.Text = "Prestaciones";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // elementosToolStripMenuItem
             // 
             this.elementosToolStripMenuItem.Name = "elementosToolStripMenuItem";
-            this.elementosToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.elementosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.elementosToolStripMenuItem.Text = "Elementos";
             // 
             // estadosToolStripMenuItem
             // 
             this.estadosToolStripMenuItem.Name = "estadosToolStripMenuItem";
-            this.estadosToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.estadosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.estadosToolStripMenuItem.Text = "Alta Estados";
             this.estadosToolStripMenuItem.Click += new System.EventHandler(this.estadosToolStripMenuItem_Click);
             // 
             // altaDepartamentosToolStripMenuItem
             // 
             this.altaDepartamentosToolStripMenuItem.Name = "altaDepartamentosToolStripMenuItem";
-            this.altaDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.altaDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.altaDepartamentosToolStripMenuItem.Text = "Alta Departamentos";
             this.altaDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.altaDepartamentosToolStripMenuItem_Click);
             // 
             // altaDocumentosToolStripMenuItem
             // 
             this.altaDocumentosToolStripMenuItem.Name = "altaDocumentosToolStripMenuItem";
-            this.altaDocumentosToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.altaDocumentosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.altaDocumentosToolStripMenuItem.Text = "Alta Documentos";
             this.altaDocumentosToolStripMenuItem.Click += new System.EventHandler(this.altaDocumentosToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(194, 22);
+            this.toolStripMenuItem2.Text = "Alta Odontologos";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // altaTipoOdontologoToolStripMenuItem
+            // 
+            this.altaTipoOdontologoToolStripMenuItem.Name = "altaTipoOdontologoToolStripMenuItem";
+            this.altaTipoOdontologoToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.altaTipoOdontologoToolStripMenuItem.Text = "Alta Tipo Odontologos";
+            this.altaTipoOdontologoToolStripMenuItem.Click += new System.EventHandler(this.altaTipoOdontologoToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(194, 22);
+            this.toolStripMenuItem3.Text = "Alta Atenciones";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // procesosToolStripMenuItem
             // 
@@ -180,6 +209,13 @@
             this.menuStrip1.Size = new System.Drawing.Size(856, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // altaUsuariosToolStripMenuItem
+            // 
+            this.altaUsuariosToolStripMenuItem.Name = "altaUsuariosToolStripMenuItem";
+            this.altaUsuariosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.altaUsuariosToolStripMenuItem.Text = "Alta Usuarios";
+            this.altaUsuariosToolStripMenuItem.Click += new System.EventHandler(this.altaUsuariosToolStripMenuItem_Click);
             // 
             // Escritorio
             // 
@@ -221,5 +257,9 @@
         private System.Windows.Forms.ToolStripMenuItem altaDepartamentosToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem altaDocumentosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem altaTipoOdontologoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem altaUsuariosToolStripMenuItem;
     }
 }

@@ -72,5 +72,29 @@ namespace TPI
             AltaDocumento ventana = new AltaDocumento();
             ventana.Show();
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            AltaOdonto ventana = new AltaOdonto();
+            ventana.Show();
+        }
+
+        private void altaTipoOdontologoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaTipoOdonto ventana = new AltaTipoOdonto();
+            ventana.Show();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            AltaAtenciones ventana = new AltaAtenciones();
+            ventana.Show();
+        }
+
+        private void altaUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaUsuario ventana = new AltaUsuario();
+            ventana.Show();
+        }
     }
 }
