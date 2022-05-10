@@ -42,3 +42,4 @@ C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.csproj.CoreCompileInputs.cache
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.exe
 C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.pdb
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaElemento.resources

@@ -154,6 +154,9 @@
     <EmbeddedResource Include="ABMs\AltaDocumento.resx">
       <DependentUpon>AltaDocumento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\AltaElemento.resx">
+      <DependentUpon>AltaElemento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ABMs\AltaEstado.resx">
       <DependentUpon>AltaEstado.cs</DependentUpon>
     </EmbeddedResource>
