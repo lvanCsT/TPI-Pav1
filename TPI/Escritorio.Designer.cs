@@ -133,14 +133,14 @@
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(194, 22);
-            this.toolStripMenuItem1.Text = "Prestaciones";
+            this.toolStripMenuItem1.Text = "Alta Prestaciones";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // elementosToolStripMenuItem
             // 
             this.elementosToolStripMenuItem.Name = "elementosToolStripMenuItem";
             this.elementosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.elementosToolStripMenuItem.Text = "Elementos";
+            this.elementosToolStripMenuItem.Text = "Alta Elementos";
             // 
             // estadosToolStripMenuItem
             // 
