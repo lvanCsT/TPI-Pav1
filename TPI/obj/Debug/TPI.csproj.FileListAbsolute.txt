@@ -1,0 +1,45 @@
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\bin\Debug\TPI.exe.config
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\bin\Debug\TPI.exe
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\bin\Debug\TPI.pdb
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.csproj.AssemblyReference.cache
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.csproj.SuggestedBindingRedirects.cache
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.AltaAfiliado.resources
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaAtenciones.resources
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaBarrio.resources
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaDepartamento.resources
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaDocumento.resources
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.AltaEstado.resources
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaExpediente.resources
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaOdonto.resources
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaPrestacion.resources
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaTipoOdonto.resources
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaUsuario.resources
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.Escritorio.resources
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.Properties.Resources.resources
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.csproj.GenerateResource.cache
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.csproj.CoreCompileInputs.cache
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.exe
+C:\Users\jehad\Desktop\TPI-Pav1\TPI\obj\Debug\TPI.pdb
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\bin\Debug\TPI.exe.config
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\bin\Debug\TPI.exe
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\bin\Debug\TPI.pdb
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.csproj.AssemblyReference.cache
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.csproj.SuggestedBindingRedirects.cache
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.AltaAfiliado.resources
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaAtenciones.resources
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaBarrio.resources
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaDepartamento.resources
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaDocumento.resources
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.AltaEstado.resources
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaExpediente.resources
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaOdonto.resources
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaPrestacion.resources
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaTipoOdonto.resources
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaUsuario.resources
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.Escritorio.resources
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.Properties.Resources.resources
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.csproj.GenerateResource.cache
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.csproj.CoreCompileInputs.cache
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.exe
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.pdb
+C:\Users\mateo\OneDrive - frc.utn.edu.ar\Documents\GitHub\TPI-Pav1\TPI\obj\Debug\TPI.ABMs.AltaElemento.resources
